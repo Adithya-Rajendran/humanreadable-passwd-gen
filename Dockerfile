@@ -5,4 +5,4 @@ WORKDIR /usr/src/app
 COPY requirements.txt .
 RUN pip install --upgrade -r requirements.txt
 
-CMD [ "python3", "./passwd_gen.py" ]
+ENTRYPOINT [ "python3", "./passwd_gen.py" ]
