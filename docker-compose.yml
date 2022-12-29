@@ -1,0 +1,7 @@
+version: "3.9"
+services:
+  passwd:
+    container_name: passwd_gen
+    build: .
+    volumes:
+      - '.:/usr/src/app'
