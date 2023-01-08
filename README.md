@@ -6,6 +6,7 @@ We get more security from a longer password than by adding more characters.
 
 ## Usage 
 
+### Recomended Use
 Build the image
 ```bash
 docker build -t humanreadable-passwd-gen_passwd .
@@ -13,15 +14,15 @@ docker build -t humanreadable-passwd-gen_passwd .
 
 Run the docker image
 ```bash
-docker run -it --rm --name passwd_gene --volume $(pwd):/usr/src/app humanreadable-passwd-gen_passwd:latest
+docker run -it --rm --name passwd_gene humanreadable-passwd-gen_passwd:latest
 ```
 
-#### Using docker-compose
+### Using docker-compose
 ```bash
 docker-compose up && docker-compose down
 ```
 
-#### Running it using python3:
+### Running it using python3:
 
 Install the requirements
 ```bash
